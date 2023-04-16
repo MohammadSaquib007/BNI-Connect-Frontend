@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BNI Connect Sign Up</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* .logo-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  z-index: 9999;
+} */
+
+      /* .logo-container img {
+  width: 100%;
+  height: auto;
+} */
+
+      #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-image: url("/fw-bg-gradient.png");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+      }
+      #logo {
+        width: 200px;
+        margin-bottom: 20px;
+      }
+      form {
+        background-color: #fff;
+        padding: 40px;
+        width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      label {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 8px;
+        display: block;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 16px;
+        display: block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        background-color: #1877f2;
+        color: #fff;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      input[type="submit"]:hover {
+        background-color: #166fe5;
+      }
+      .disclaimer {
+        font-size: 12px;
+        margin-top: 16px;
+        text-align: center;
+        color: #999;
+      }
+      .disclaimer a {
+        color: #1877f2;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="logo-container">
+      <img src="/fcd46366978351a0a4ae054db381aa2b09c8c004.png" alt="Logo">
+    </div> -->
+
+    <div id="container">
+      <img
+        src="fcd46366978351a0a4ae054db381aa2b09c8c004.png"
+        alt="BNI Connect Logo"
+        id="logo"
+      />
+      <form action="" method="POST">
+        <label for="firstname">First Name</label>
+        <input
+          type="text"
+          placeholder="Enter your first name"
+          name="firstname"
+          required
+        />
+
+        <label for="lastname">Last Name</label>
+        <input
+          type="text"
+          placeholder="Enter your last name"
+          name="lastname"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          name="email"
+          required
+        />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          placeholder="Enter your password"
+          name="password"
+          required
+        />
+
+        <input type="submit" value="Sign Up" />
+
+        <p class="disclaimer">
+          By clicking Sign Up, you agree to our <a href="#">Terms</a>,
+          <a href="#">Data Policy</a> and <a href="#">Cookie Policy</a>.
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
